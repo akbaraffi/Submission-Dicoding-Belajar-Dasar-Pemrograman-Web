@@ -1,0 +1,110 @@
+header {
+    margin: 0;
+    text-align: center;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+header p,
+h1 {
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: #393E46;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00ADB5;
+}
+
+nav li {
+    margin-right: 12px;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #222831;
+}
+
+nav li:hover {
+    background-color: #00ADB5;
+    color: #222831;
+}
+
+main {
+    display: flex;
+    margin: 0;
+    background-color: #EEEEEE;
+    align-items: flex-start;
+}
+
+.content {
+    padding: 20px;
+}
+
+article {
+    padding: 16px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    color: #222831;
+}
+
+article img{
+    max-width: 400px;
+}
+
+aside {
+    margin: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    color: #222831;
+}
+
+aside img {
+    max-width: 220px;
+    border-radius: 6px;
+}
+
+footer {
+    margin: 0;
+    padding: 20px;
+    color: #EEEEEE;
+    background-color: #222831;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
