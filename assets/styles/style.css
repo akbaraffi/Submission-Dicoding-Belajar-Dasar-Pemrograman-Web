@@ -2,6 +2,7 @@ body {
     height: 100%;
     margin: 0;
     background: #000;
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -38,24 +39,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #393E46;
+    color: #979fac;
 }
 
 nav li {
-    margin-right: 12px;
     padding: 8px 16px;
-    border-radius: 8px;
-    background-color: #222831;
 }
 
 nav li:first-child {
-  margin-left: 20px;
-}
-
-
-nav li:hover {
-    background-color: #00ADB5;
-    color: #222831;
+    margin-left: 40px;
 }
 
 main {
@@ -72,10 +64,12 @@ main {
 article {
     padding: 16px;
     margin: 10px;
+    margin-left: 40px;
     background-color: #FFFFFF;
     border: 1px solid #DDD;
     border-radius: 8px;
     color: #222831;
+    scroll-margin-top: 70px;
 }
 
 article img {
@@ -89,10 +83,15 @@ aside {
     border: 1px solid #DDD;
     border-radius: 8px;
     color: #222831;
+    text-align: center;
 }
 
 aside img {
-    max-width: 220px;
+    max-width: 300px;
+    padding: 10px;
+}
+
+img {
     border-radius: 6px;
 }
 
@@ -110,9 +109,11 @@ footer {
         flex-flow: column nowrap;
     }
 
-    main aside {
+    main article,
+    aside {
         align-self: center;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -120,7 +121,7 @@ footer {
         justify-content: center;
     }
 
-    main aside {
-        align-self: stretch;
+    nav li:first-child {
+        margin-left: 0px;
     }
 }
