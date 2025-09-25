@@ -1,5 +1,12 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #000;
+}
+
 header {
     margin: 0;
+    padding: 0;
     text-align: center;
     background-color: #222831;
     color: #EEEEEE;
@@ -7,7 +14,13 @@ header {
 
 header p,
 h1 {
-    padding-top: 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -17,26 +30,28 @@ nav ul {
     padding: 15px;
     margin: 0;
     background-color: #393E46;
-    border-radius: 8px;
 }
 
 nav a {
     text-decoration: none;
     color: #EEEEEE;
-    font-weight: 500;
 }
 
 nav a:hover {
-    color: #00ADB5;
+    color: #393E46;
 }
 
 nav li {
     margin-right: 12px;
     padding: 8px 16px;
-    text-align: center;
     border-radius: 8px;
     background-color: #222831;
 }
+
+nav li:first-child {
+  margin-left: 20px;
+}
+
 
 nav li:hover {
     background-color: #00ADB5;
@@ -63,7 +78,7 @@ article {
     color: #222831;
 }
 
-article img{
+article img {
     max-width: 400px;
 }
 
@@ -91,20 +106,21 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-  main {
-    flex-flow: column nowrap;
-  }
- 
-  main aside {
-    align-self: center;
-  }
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
 }
- 
+
 @media screen and (max-width: 768px) {
-  nav ul {
-    justify-content: center;
-  }
-  main aside {
-    align-self: stretch;
-  }
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
 }
