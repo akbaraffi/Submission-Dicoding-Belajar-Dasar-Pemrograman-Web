@@ -33,6 +33,14 @@ nav ul {
     background-color: #393E46;
 }
 
+nav li {
+    padding: 8px 16px;
+}
+
+nav li:first-child {
+    margin-left: 40px;
+}
+
 nav a {
     text-decoration: none;
     color: #EEEEEE;
@@ -40,14 +48,6 @@ nav a {
 
 nav a:hover {
     color: #979fac;
-}
-
-nav li {
-    padding: 8px 16px;
-}
-
-nav li:first-child {
-    margin-left: 40px;
 }
 
 main {
@@ -73,6 +73,8 @@ article {
 }
 
 article img {
+    display: block;
+    margin: auto;
     max-width: 400px;
 }
 
@@ -107,11 +109,12 @@ footer {
 @media screen and (max-width: 1200px) {
     main {
         flex-flow: column nowrap;
+        align-items: center;
     }
 
     main article,
     aside {
-        align-self: center;
+        margin: 20px 40px;
     }
 
 }

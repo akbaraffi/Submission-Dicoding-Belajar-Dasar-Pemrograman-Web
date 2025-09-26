@@ -12,125 +12,146 @@
     <header>
         <h1>Machine Learning</h1>
         <p>Terobosan Revolusioner dalam Dunia Teknologi</p>
-
     </header>
 
     <nav>
         <ul>
-            <li><a href="#pengertian">Pengertian</a></li>
+            <li><a href="#definisi">Definisi</a></li>
             <li><a href="#sejarah">Sejarah</a></li>
             <li><a href="#jenis">Jenis</a></li>
-            <li><a href="#implementasi">Implementasi</a></li>
+            <li><a href="#penerapan">Penerapan</a></li>
         </ul>
     </nav>
 
     <main>
         <div class="content">
-
-            <article id="pengertian">
+            <article id="definisi">
                 <h2>Apa itu Machine Learning?</h2>
                 <img src="assets/images/ml-concept.png" alt="Ilustrasi konsep dasar Machine Learning">
                 <p>
-                    Machine Learning adalah cabang kecerdasan buatan yang memungkinkan komputer
-                    untuk <em>belajar dari data</em> tanpa harus diprogram aturan secara eksplisit.
-                    Sistem akan meningkatkan performanya seiring bertambahnya data dan pengalaman.
+                    Machine Learning adalah cabang dari kecerdasan buatan yang memungkinkan sistem untuk belajar secara
+                    otomatis dari data tanpa harus diprogram secara eksplisit. Dalam prosesnya, algoritma Machine
+                    Learning menganalisis pola dan hubungan dalam data untuk membuat prediksi, klasifikasi, atau
+                    keputusan.
                 </p>
                 <p>
-                    Konsep ini sangat berguna untuk menangani masalah kompleks yang sulit diselesaikan
-                    dengan logika statis, misalnya pengenalan wajah, rekomendasi produk, atau prediksi
-                    cuaca. Dengan ML, komputer mampu mengenali pola dari data historis dan menerapkannya
-                    pada situasi baru.
+                    Teknologi ini bekerja dengan menggunakan model statistik dan komputasi yang terus ditingkatkan
+                    seiring bertambahnya data yang diterima. Dengan kata lain, semakin banyak data yang digunakan untuk
+                    melatih model, semakin akurat hasil prediksi atau analisis yang dihasilkan. Machine Learning saat
+                    ini menjadi fondasi penting dalam berbagai bidang seperti kesehatan, keuangan, otomotif, hingga
+                    keamanan siber.
                 </p>
             </article>
 
             <article id="sejarah">
-                <h2>Sejarah</h2>
+                <h2>Sejarah Machine Learning</h2>
                 <img src="assets/images/ml-history.png" alt="Sejarah perkembangan machine learning">
                 <p>
-                    Perjalanan Machine Learning dimulai pada 1950-an dengan uji Turing dan
-                    perceptron. Tahun 1980-an ditandai dengan munculnya backpropagation untuk
-                    melatih jaringan saraf. Era 1990–2000-an melahirkan pendekatan statistik
-                    seperti SVM dan Random Forest. Sejak 2010-an, deep learning berkembang pesat
-                    berkat GPU dan data dalam jumlah besar.
+                    Sejarah perkembangan Machine Learning dimulai pada tahun 1957 ketika Frank Rosenblatt memperkenalkan
+                    Perceptron, model jaringan saraf sederhana untuk klasifikasi data. Pada tahun 1960-an, konsep
+                    Decision Trees dikembangkan untuk membantu pengambilan keputusan berbasis data. Lalu pada 1969
+                    muncul Multilayer Perceptron yang memungkinkan jaringan saraf memproses data dengan lapisan yang
+                    lebih dalam. Perkembangan besar berikutnya terjadi di tahun 1980 dengan diperkenalkannya teknik
+                    Backpropagation, yang membuat pelatihan jaringan saraf menjadi lebih efisien.
                 </p>
                 <p>
-                    Perkembangan ini juga tidak lepas dari kemajuan infrastruktur komputasi awan,
-                    ketersediaan dataset publik, dan kontribusi komunitas open-source. Kini, ML
-                    menjadi salah satu fondasi utama dalam transformasi digital di berbagai bidang.
+                    Pada dekade 1990-an, Support Vector Machines (SVM) menjadi populer karena performanya yang tinggi
+                    dalam klasifikasi data, diikuti oleh Random Forest pada 2001 yang meningkatkan akurasi prediksi
+                    melalui penggabungan banyak pohon keputusan. Tahun 1998 ditandai dengan lahirnya Convolutional
+                    Neural Networks (CNN) yang mendukung kemajuan besar di bidang visi komputer. Era 2010-an ditandai
+                    dengan kebangkitan Deep Learning Models, yang merevolusi pengolahan data skala besar, dan di tahun
+                    2017, model Transformer muncul, menjadi dasar bagi teknologi pemrosesan bahasa alami modern seperti
+                    GPT.
                 </p>
             </article>
 
             <article id="jenis">
-                <h2>Jenis</h2>
+                <h2>Jenis - Jenis Machine Learning</h2>
                 <img src="assets/images/ml-types.png" alt="Jenis-jenis machine learning">
-                <ul>
-                    <li><strong>Supervised Learning:</strong> belajar dari data berlabel untuk klasifikasi atau regresi.
-                    </li>
-                    <li><strong>Unsupervised Learning:</strong> menemukan pola tersembunyi pada data tanpa label
-                        (clustering, reduksi dimensi).</li>
-                    <li><strong>Reinforcement Learning:</strong> agen belajar melalui trial-and-error dengan feedback
-                        berupa reward.</li>
-                </ul>
-                <p>
-                    Ketiga pendekatan ini menjadi dasar bagi banyak aplikasi modern, mulai dari sistem rekomendasi,
-                    deteksi anomali, hingga pengendalian robot. Masing-masing memiliki kelebihan dan tantangan
-                    tergantung pada ketersediaan data serta tujuan penggunaan.
-                </p>
+                <h3>Unsupervised Learning</h3>
+                <p>Unsupervised learning adalah jenis Machine Learning yang bekerja tanpa label data. Algoritma ini
+                    mencari pola, kelompok (clustering), atau struktur tersembunyi dari data mentah. Contoh penerapannya
+                    adalah pengelompokan pelanggan berdasarkan kebiasaan belanja atau pengelompokan gambar serupa dalam
+                    arsip foto tanpa harus memberi tahu sistem kategori sebelumnya.</p>
+                <h3>Supervised Learning</h3>
+                <p>Supervised learning menggunakan data yang sudah diberi label untuk melatih model agar bisa
+                    memprediksi atau mengklasifikasi data baru. Model ini belajar dari pasangan input-output yang
+                    tersedia untuk menemukan hubungan di antara keduanya. Contoh penggunaannya adalah prediksi harga
+                    rumah berdasarkan data ukuran, lokasi, dan fasilitas, atau mendeteksi email spam dari riwayat email
+                    yang sudah diberi label.</p>
+                <h3>Reinforcement Learning</h3>
+                <p>Reinforcement learning adalah metode di mana agen (program) belajar melalui interaksi dengan
+                    lingkungan dan menerima umpan balik berupa reward atau penalty. Agen mencoba berbagai tindakan untuk
+                    memaksimalkan total reward dalam jangka panjang. Contoh penerapannya adalah robot yang belajar
+                    berjalan, sistem rekomendasi iklan yang menyesuaikan pilihan terbaik, atau AI pada game yang belajar
+                    strategi untuk menang.</p>
             </article>
 
-            <article id="implementasi">
-                <h2>Penggunaan Machine Learning</h2>
-                <img src="assets/images/ml-implementation.png" alt="Implementasi machine learning di berbagai bidang">
+            <article id="penerapan">
+                <h2>Penerapan Machine Learning di Berbagai Bidang</h2>
+                <img src="assets/images/ml-implementation.png" alt="Penerapan machine learning di berbagai bidang">
                 <section>
                     <h3>Kesehatan</h3>
                     <p>
-                        ML digunakan untuk deteksi penyakit dari citra medis, prediksi risiko pasien,
-                        pemantauan kesehatan real-time dengan perangkat wearable, dan penemuan obat baru
-                        melalui simulasi molekuler.
+                        Machine Learning di bidang kesehatan berperan penting dalam menganalisis data medis seperti
+                        citra rontgen, MRI, atau hasil laboratorium untuk membantu dokter mendiagnosis penyakit dengan
+                        lebih cepat dan akurat. Teknologi ini juga digunakan untuk memprediksi risiko penyakit kronis,
+                        memantau kondisi pasien secara real-time, hingga merancang perawatan yang dipersonalisasi sesuai
+                        kebutuhan masing-masing.
                     </p>
                 </section>
                 <section>
                     <h3>Retail</h3>
                     <p>
-                        Penerapan meliputi sistem rekomendasi produk, analisis perilaku konsumen,
-                        penentuan harga dinamis, serta manajemen rantai pasok yang lebih efisien.
+                        Dalam dunia ritel, Machine Learning digunakan untuk memahami pola belanja pelanggan melalui data
+                        transaksi dan preferensi. Teknologi ini memungkinkan sistem rekomendasi produk yang lebih
+                        relevan, mengoptimalkan manajemen stok, serta mendukung strategi pemasaran yang lebih tepat
+                        sasaran. Hasilnya, pengalaman belanja pelanggan menjadi lebih personal dan efisien bagi penjual.
                     </p>
                 </section>
                 <section>
                     <h3>Finance</h3>
                     <p>
-                        ML mendukung deteksi penipuan transaksi, analisis kredit, manajemen risiko,
-                        serta prediksi pasar saham dan tren investasi jangka panjang.
+                        Machine Learning di sektor keuangan membantu menganalisis data pasar dalam jumlah besar untuk
+                        memprediksi tren harga saham, nilai tukar, atau risiko investasi. Teknologi ini juga dapat
+                        mendeteksi aktivitas penipuan atau transaksi yang mencurigakan dengan cepat, sehingga
+                        meningkatkan keamanan data finansial. Selain itu, ML digunakan untuk mengotomatisasi proses
+                        pengambilan keputusan kredit dan portofolio investasi.
                     </p>
                 </section>
                 <section>
                     <h3>Otomotif</h3>
                     <p>
-                        Industri otomotif memanfaatkan ML untuk sistem kendaraan otonom,
-                        pemeliharaan prediktif, serta peningkatan keselamatan dengan sensor cerdas
-                        dan pengolahan data real-time.
+                        Dalam industri otomotif, Machine Learning digunakan untuk mengembangkan kendaraan otonom yang
+                        mampu mengenali rambu lalu lintas, pejalan kaki, dan kondisi jalan secara real-time. Teknologi
+                        ini juga mendukung sistem navigasi pintar, deteksi potensi bahaya, serta perawatan prediktif
+                        untuk mengurangi kerusakan kendaraan. Dengan demikian, ML membantu menciptakan pengalaman
+                        berkendara yang lebih aman, efisien, dan ramah pengguna.
                     </p>
                 </section>
             </article>
-
         </div>
 
         <aside>
-            <h2>Posisi Machine Learning</h2>
+            <h2>Posisi Machine Learning dalam AI</h2>
             <figure>
                 <img src="assets/images/ml-hierarchy.png"
                     alt="Diagram hubungan AI, Machine Learning, Deep Learning, Generative AI">
                 <figcaption>
-                    ML berada di dalam AI, bersama Deep Learning dan Generative AI.
+                    Machine Learning (ML) adalah cabang dari AI yang fokus belajar dari data untuk membuat keputusan. Di
+                    dalam Machine
+                    Learning terdapat Deep Learning (DL) dan Generative AI yang mampu mengolah data kompleks dan
+                    menghasilkan konten baru.
                 </figcaption>
             </figure>
         </aside>
-
     </main>
 
     <footer>
         Copyright &copy;2025, Made by Akbar Raffi
     </footer>
 </body>
+
+<script defer src="assets/scripts/main.js"></script>
 
 </html>
